@@ -1,10 +1,10 @@
 # IRCLogBot
 An IRC Bot that keeps a log of the messages
 # How to execute? 
-Dependencies:
-    [moment](http://momentjs.com/)
-    [node-irc](https://github.com/martynsmith/node-irc)
-An easy to get it is via npm
+Dependencies:  
+*    [moment](http://momentjs.com/)
+*    [node-irc](https://github.com/martynsmith/node-irc)
+An easy to get it is via npm  
 
 To execute just type:
 ```

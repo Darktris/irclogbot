@@ -51,6 +51,13 @@ parser.addArgument(
 )
 
 parser.addArgument(
+  ['-o', '--output'], {
+    help: 'Output directory',
+     defaultValue: '.',
+  }
+)
+
+parser.addArgument(
   ['-nc', '--noconsole'], {
     help: 'Deactivates the CLI interface',
     action: 'storeTrue'
@@ -91,7 +98,10 @@ bot.addListener('pm', function(from, message) {
 
 bot.addListener('message', function (from, to, message) {
     if (!message.startsWith("!") && !message.startsWith(args.cpassw)) 
-      fs.appendFile(moment().format("YYYYMMDD.[log]"), from + " => " + to + ": " + message + "\n", null)
+      fs.appendFile(args.output + '/' + moment().format("YYYYMMDD.[log]"), from + " => " + to + ": " + message + "\n", (err) => {
+        console.log("Error while writing data")
+        console.log(err)
+      })
 });
 
 process.stdin.setEncoding('utf8');
