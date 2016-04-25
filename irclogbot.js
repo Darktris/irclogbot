@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var libparse = require('argparse');
 var libirc = require('irc')
 var moment = require('moment');
