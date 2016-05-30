@@ -2,6 +2,7 @@
 An IRC Bot that keeps a log of the messages
 # How to execute? 
 An easy way to obtain them is via npm
+
 Dependencies:  
 *    [moment](http://momentjs.com/)  
 *    [node-irc](https://github.com/martynsmith/node-irc)  
@@ -13,6 +14,7 @@ To execute just type:
 ```
 # Milestones
 - [x] Output directory 
+- [ ] Auto-publishing tool in a http, maybe an embedded http server
 - [ ] More options for output and MongoDB support  
 - [ ] Auto-response messages  
 - [ ] Output in HTML-friendly format
